@@ -20,9 +20,9 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
             localStorage.setItem('token', data.token); // Save the token
             localStorage.setItem('UserId',data.userId)
             if (role.toLowerCase() === 'admin') {
-                window.location.href = '../html/properties.html'; // Redirect to admin page
+                window.location.href = '../properties.html'; // Redirect to admin page
             } else {
-                window.location.href = '../html/booking.html'; // Redirect to user page
+                window.location.href = '../booking.html'; // Redirect to user page
             }
         } else {
             alert('Invalid credentials'); // Show error message
